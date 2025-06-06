@@ -1,6 +1,8 @@
-hours = input('Please enter number of hours: ')
-rate = input ('Please enter the rate: ')
-pay = float(rate) * float(hours)
-pay = round(pay * 100) / 100 # to round the resulting pay to two decimal places
-print('The pay is:', pay)
+# This scripts helps the user to compute their gross pay,
+# by asking the user to provide their number of working hours
+# and their rate per hour.
 
+number_hours = input('Please input your number of working hours: ')
+rate_per_hour = input('Please input your rate per hour: ')
+gross_pay = float(number_hours) * float(rate_per_hour)
+print(f'Your gross pay is ${gross_pay}.')
