@@ -12,12 +12,14 @@ while True:
     user_input = input('Please enter a number: ')
     if user_input == 'done':
         break
-    else:
-        try:
-            number = float(user_input)
-            total += number
-            count += 1
-            average = total / count
-            print(f'Total: {total}. Count: {count}. Average: {average}.')
-        except:
-            print('Invalid input! Please try again!')
+    try:
+        number = float(user_input)
+    except:
+        print('Invalid input! Please try again!')
+        continue
+    total += number
+    count += 1
+
+# print values
+average = total / count
+print(f'Total: {total}. Count: {count}. Average: {average}.')
