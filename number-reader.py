@@ -20,6 +20,5 @@ while True:
     total += number
     count += 1
 
-# print values
 average = total / count
 print(f'Total: {total}. Count: {count}. Average: {average}.')
