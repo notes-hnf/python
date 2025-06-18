@@ -9,5 +9,5 @@ except:
     print('No file found with the given filename!')
     quit()
 for line in file_handle:
-    line_beautified = line.rstrip().upper()
-    print(line_beautified)
+    line_uppercase = line.rstrip().upper()
+    print(line_uppercase)
