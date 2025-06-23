@@ -1,11 +1,7 @@
-# This script will ...
-#
-#
-#
-#
-#
-#
-
+# This script will prompts the user to provide a filename.
+# It will use 'clown.txt' if no filename is provided.
+# It counts and then shows the most repeated word with
+# the associated counted times.
 
 filename = input('Please enter the filename: ')
 if len(filename) < 1:
